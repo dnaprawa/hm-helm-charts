@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 1.2.0
+dependencies:
+- - condition: provision.jaeger
+  name: jaeger
+  repository: https://jaegertracing.github.io/helm-charts
+  version: 0.56.0
+- - condition: provision.rabbitmq
+  name: rabbitmq
+  repository: https://charts.bitnami.com/bitnami
+  version: 10.1.5
+- - condition: provision.mssql
+  name: mssql-linux
+  repository: https://dnaprawa.github.io/helm-charts
+  version: 1.0.8
+description: A Helm chart for Kubernetes
+name: shipy
+type: application
+version: 0.2.0
+
+...
+files:
+  shipy-0.2.0.tgz: sha256:024e86b569b2c83db4c067480c9e2c0cd46092e0b105ec2591c3d891c75ec7b0
+-----BEGIN PGP SIGNATURE-----
+
+wsDcBAEBCgAQBQJiquSPCRChaDm5GQeomwAAz+gMAJtQJDZCMN34fI2gGI0LmrUy
+hasEBXEXyNfVPdGIDULK0hWt2f6H0FX/I+FLOlIWCkq4aYo9SVVpk0Y6TSB0FceT
+ghAGFnpPDkIRNRK/ss4IwjtjzAMQtxyY3YPY3am7X8apxKP2aIjEzcswA9pfAgGn
+NZ4cBRh3mde7jA3TW0qV+nIYrFcN/cpOjD/rQJDAPQjYm8JO3NS3xI89nItz214T
+/OFe51kuH9hYCkA5y7UTMTg04+wjYqK+7nJB9RACupkWdQFP5ieThSokfMN6tgz2
+JocKaEw2sHsT/BEERtROGzP0jGlUBWFGNlwkxFcWMJEhjEExTaD4REHrwOa14ZY3
+0TIeOmDnlb/iMk993HP4stPHxLbSsLuwBXF3ed7faDMTYMmWwSIfVU0kOeT9rtpG
+//sHs5C1pBa4M5Qv/9jGI60K+hZ9U33QAUO3UHW3En0P27bpKztWvhfIpZK+4jKj
+Xl609AB0BO2sGVM692yWx3LDi0JM/0QNiAXrhAY9Bg==
+=1iur
+-----END PGP SIGNATURE-----
